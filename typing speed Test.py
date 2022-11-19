@@ -49,3 +49,9 @@ if __name__ == '__main__':
     input("*****Press enter when your ready to check your speed*****:")
     print()
 
+# recording time for input 
+    stime = time()
+    inprompt = input()
+    etime = time()
+    
+
