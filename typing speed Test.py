@@ -35,7 +35,7 @@ def speed(inprompt, stime, etime):
     return speed 
 
 # calculate hte total elapsed time 
-def elapsedtiem(stime, etime):
+def elapsedtime(stime, etime):
     time = etime - stime # etime is the end time and stime is the start time 
     return time 
 
@@ -53,5 +53,10 @@ if __name__ == '__main__':
     stime = time()
     inprompt = input()
     etime = time()
+
+# collect all the imformation returned by functions
+    time = round(elapsedtime(stime,etime),2)
+    speed = speed(inprompt,stime,etime)
+    errors = tperror(prompt)
     
 
