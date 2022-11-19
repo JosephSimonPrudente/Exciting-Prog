@@ -63,11 +63,11 @@ if __name__ == '__main__':
     errors = tperror(prompt)
 
 # printing all the required data to see result
-    print("====================================")
+    print("=================================================================")
     print("total time elapsed:", time ,"Seconds")
-    print("====================================")
+    print("=================================================================")
     print("Your average typing speed was ", speed , "words per minute (w/m)")
-    print("====================================")
+    print("=================================================================")
     print("with the total of ", errors, "errors")
 
 
