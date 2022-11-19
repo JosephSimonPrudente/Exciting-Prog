@@ -5,7 +5,7 @@ def tperror(prompt):
     global inwords 
 
     words = prompt.split()
-    error = 0
+    errors = 0
 
     for i in range (len (inwords)):
         if i in (0, len(inwords)-1):
@@ -21,7 +21,7 @@ def tperror(prompt):
                     errors += 1 
             else:
                 errors += 1
-    return error
+    return errors
 
 # calculate the speed of typing words per minute 
 def speed(inprompt, stime, etime):
@@ -42,7 +42,10 @@ def elapsedtime(stime, etime):
 # this was the paragraph which you have you have to type to check your speed
 if __name__ == '__main__':
     prompt = "We may easily improve our writing skills by using a random paragraph generator. One of the best way to develop writing skills and English is by writing or reading. This tool is simple to use and you can use it anywhere anytime."
-    print("Type this:-",prompt)
+    print()
+    print("***************************************************TYPE THIS******************************************")
+    print()
+    print(prompt)
 
 #Checking to input   
     print()
@@ -60,8 +63,11 @@ if __name__ == '__main__':
     errors = tperror(prompt)
 
 # printing all the required data to see result
+    print("====================================")
     print("total time elapsed:", time ,"Seconds")
+    print("====================================")
     print("Your average typing speed was ", speed , "words per minute (w/m)")
+    print("====================================")
     print("with the total of ", errors, "errors")
 
 
