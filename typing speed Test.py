@@ -1,6 +1,6 @@
 from time import time # record the time 
 
-# now calculate the accuracy of input prompt
+# calculate the accuracy of input prompt
 def tperror(prompt):
     global inwords 
 
@@ -23,5 +23,15 @@ def tperror(prompt):
                 errors += 1
     return error
 
+# now calculate the speed of typing words per minute 
+def speed(inprompt, stime, etime):
+    global time 
+    global inwords 
+
+    inwords = inprompt.split()
+    twords = len(inwords)
+    speed = twords / time 
+
+    return speed 
 
 
